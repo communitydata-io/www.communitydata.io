@@ -48,21 +48,18 @@ The Verification Service will add an ```owners``` attribute to the data document
 
 ### Data consumption
 
+There are a growing collection of interfaces to consume data from the repository. Since the data is open-source, anyone is free to create their own API on top of the data. The core project contributors also provide a few public and private interfaces for convenience. 
+
 #### GraphQL API
-#### Chrome extension
-#### 3rd party applications
+
+The core contributors provide a GraphQL API for developers to consume for public or private use. Please see the [GraphQL API](https://docs.communitydata.io/api) documentation for more details. 
+
+#### 3rd-party applications
+
+There is a growing list of 3rd-party applications built upon Community Data. We encourage any developers to check out the [GraphQL API](https://docs.communitydata.io/api) for details on how to consume data for your application. We also encourage any apps to list their projects in the ```[apps repository](#)```
 
 ## Application development
 
-## FAQs
-
-### Why JSON and JSON Schema? 
-
-* Flexible schemas
-* Human readable and editable
-* Developer friendly
-* Better interface for Javascript applications
-
 ## Governance 
 
-## Licensing
+## License 
