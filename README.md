@@ -8,17 +8,19 @@ The project's constituent parts serve to create or enhance data documents or to 
 
 ### Data repository
 
+[https://github.com/communitydata-io/data](https://github.com/communitydata-io/data)
+
 The central data repository is a collection of folders for each of the top-level data models supported in the platform. Each top-level folder is a single level collection of JSON documents that conform to a canonical schema definiton. 
 
 ### Data validation
 
 Data validation is performed against the corresponding JSON Schema on each commit to the repo. Any document that fails validation against the schema will reject the commit. You can find the JSON Schema definitions for each of the canonical data models here: 
 
-* companies
-* people
-* locations
-* sectors
-* stages
+* [company](https://docs.communitydata.io/datamodels/company)
+* [person](https://docs.communitydata.io/datamodels/person)
+* [location](https://docs.communitydata.io/datamodels/location)
+* [sector](https://docs.communitydata.io/datamodels/sector)
+* [stage](https://docs.communitydata.io/datamodels/stage)
 
 ### Data contributions
 
@@ -37,6 +39,12 @@ Data enhancers are scripts that consume public APIs or websites, structure the i
 Anyone can write data enhancers as standalone private or public scripts or post them to the enhancer repository for further collaboration.
 
 ### Data ownership
+
+One of the core principles of the Community Data project is that individual data documents can be maintained and owned by select individuals or groups of individuals. 
+
+Proving ownership over data documents is performed by submitting a verification proof to any of the core disambiguation attributes for the object type. For example, a Person object would require posting a proof to Twitter, LinkedIn or a personal website. 
+
+The Verification Service will add an ```owners``` attribute to the data document that contains the GitHub username for the user who posted the proof. Any pull-request to the data document by any GitHub user in the ```owners``` array be merged automatically without need for review. 
 
 ### Data consumption
 
